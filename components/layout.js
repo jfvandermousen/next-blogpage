@@ -5,13 +5,13 @@ import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/link'
 
 const name = 'Jf Vandermousen'
-export const siteTitle = 'pesronnal blog'
+export const siteTitle = 'Personal Blog Page'
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <meta
           name="description"
           content="Personal blog of Jf Vanbdermousen"
@@ -32,8 +32,8 @@ export default function Layout({ children, home }) {
               priority
               src="/images/profile.jpg"
               className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              height={180}
+              width={180}
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
@@ -62,9 +62,9 @@ export default function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div >
           <Link href="/">
-            <a>← Back to home</a>
+            <a className={styles.backToHome}>← Back to home</a>
           </Link>
         </div>
       )}

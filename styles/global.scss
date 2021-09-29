@@ -1,7 +1,8 @@
-@import "mixins";
 
 
-$linkColor:purple;
+
+$linkColor:#5a189a;
+
 
 
 html,
@@ -20,8 +21,10 @@ body {
 
 a {
   color: $linkColor;
+  font-weight: 500;
   text-decoration: none;
 }
+
 
 a:hover {
   text-decoration: underline;

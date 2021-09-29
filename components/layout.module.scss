@@ -1,3 +1,6 @@
+$backBtn:#0070f3;
+
+
 .container {
     max-width: 36rem;
     padding: 0 1rem;
@@ -11,8 +14,23 @@
     align-items:flex-start;
   }
   
-  .backToHome {
-    margin: 3rem 0 0;
-  }
+
+  a.backToHome {
+      margin: 1em 0;
+      border-radius: 2px;
+      padding: 0.5em;
+      background: $backBtn;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+
+        &:hover{
+          background: white;
+          color:$backBtn;
+        }
+      }
+
+
+
   
   
