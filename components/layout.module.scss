@@ -13,10 +13,12 @@ $backBtn:#0070f3;
     justify-content: center;
     align-items:flex-start;
   }
-  
+
+  .bkhome {
+    margin-top: 2em;
+  }
 
   a.backToHome {
-      margin: 1em 0;
       border-radius: 2px;
       padding: 0.5em;
       background: $backBtn;
