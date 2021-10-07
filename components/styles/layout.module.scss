@@ -14,11 +14,11 @@ $backBtn:#0070f3;
     align-items:flex-start;
   }
 
-  .bkhome {
-    margin-top: 2em;
-  }
-
-  a.backToHome {
+ .backToHome {
+    margin: {
+      top: 85px;
+    }
+      
       border-radius: 2px;
       padding: 0.5em;
       background: $backBtn;
@@ -30,6 +30,7 @@ $backBtn:#0070f3;
           background: white;
           color:$backBtn;
         }
+
       }
 
 

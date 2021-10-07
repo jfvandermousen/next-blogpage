@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './layout.module.scss'
+import styles from './styles/layout.module.scss'
 import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/link'
 
@@ -62,7 +62,7 @@ export default function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className="bkhome">
+        <div className="home">
           <Link href="/">
             <a className={styles.backToHome}>← Back to home</a>
           </Link>
